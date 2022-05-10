@@ -1,0 +1,64 @@
+<%- include("partials/header");-%>
+
+<body>
+    <div class="registerPage">
+
+        <div class="registerForm">
+        <img src="https://app.mycaptain.in/assets/media/auth-bg.svg"/>
+        <h1>Create an account</h1>
+        
+        <div class="data-div">
+            <form>              
+                <div class="user-data">
+                    <div class="name-div">
+                        <input type="text" name="fname" class="fname" placeholder="First name"
+                        />
+                        <input type="text" name="lname" class="lname" placeholder="Last name"
+                        />
+                    </div>
+                    <input type="text" name="phone_num" class="phone-num" placeholder="Phone Number"/>
+                    <input type="email" name="email" class="email" placeholder="Email address"/>
+                    <input type="text" name="password" class="password" placeholder="Set password"
+                        autoComplete="off"
+                    />
+                    <p>Already have an indiaBazar account?
+                        <a href="/user/login">
+                            <span class="login"> Log in</span>
+                        </a>
+                    </p>
+                    <div class="btn-container">
+                        <Button type="button" class='next-btn' variant="contained" >
+                            <span>Next</span>
+                        </Button> 
+                    </div> 
+                </div>
+                <div class="user-address">
+                    <input type="text" name="phone_num" class="phone-num" placeholder="House No., Building Name (required*)"/>
+                    <input type="text" name="phone_num" class="phone-num" placeholder="Road Name, Area, Colony (required*)"/>
+                    <div class="name-div">
+                        <input type="text" name="fname" class="fname" placeholder="State"
+                        />
+                        <input type="text" name="lname" class="lname" placeholder="City"
+                        />
+                    </div>
+                    <div class="name-div">
+                        <input type="text" name="fname" class="fname" placeholder="District"
+                        />
+                        <input type="text" name="lname" class="lname" placeholder="Pin Code"
+                        />
+                    </div>
+                    
+                    <div class="btn-container">
+                        <Button class='payment-btn' variant="contained" >
+                            <span>Submit</span>
+                        </Button> 
+                    </div> 
+                </div>
+            </form>
+        </div>
+       </div> 
+    </div>
+
+    <!-- Custom Scripts -->
+    <script src="/js/register.js"></script>
+</body>

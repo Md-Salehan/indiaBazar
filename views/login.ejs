@@ -1,0 +1,32 @@
+<%- include("partials/header");-%>
+
+<body>
+    <div class="registerPage">
+
+        <div class="registerForm">
+        <img src="https://app.mycaptain.in/assets/media/auth-bg.svg"/>
+        <h1>Log In</h1>
+        
+        <div class="data-div">
+            <form>              
+                
+                <input type="text" name="phone_num" class="phone-num" placeholder="email/ phone Number"/>
+
+                <input type="text" name="password" class="password" placeholder="Enter password"
+                    autoComplete="off"
+                />
+                <p>Don't have an indiaBazar account?
+                    <a href="/user/register">
+                        <span class="login"> register</span>
+                    </a>
+                </p>
+                <div class="btn-container">
+                    <Button class='payment-btn' variant="contained" >
+                        <span>Submit</span>
+                    </Button> 
+                </div> 
+            </form>
+        </div>
+       </div> 
+    </div>
+</body>
