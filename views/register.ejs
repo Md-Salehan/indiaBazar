@@ -8,7 +8,7 @@
         <h1>Create an account</h1>
         
         <div class="data-div">
-            <form>              
+            <form action="/register" method="POST">              
                 <div class="user-data">
                     <div class="name-div">
                         <input type="text" name="fname" class="fname" placeholder="First name"
@@ -16,7 +16,7 @@
                         <input type="text" name="lname" class="lname" placeholder="Last name"
                         />
                     </div>
-                    <input type="text" name="phone_num" class="phone-num" placeholder="Phone Number"/>
+                    <input type="text" name="phoneNum" class="phone-num" placeholder="Phone Number"/>
                     <input type="email" name="email" class="email" placeholder="Email address"/>
                     <input type="text" name="password" class="password" placeholder="Set password"
                         autoComplete="off"
@@ -33,18 +33,21 @@
                     </div> 
                 </div>
                 <div class="user-address">
-                    <input type="text" name="phone_num" class="phone-num" placeholder="House No., Building Name (required*)"/>
-                    <input type="text" name="phone_num" class="phone-num" placeholder="Road Name, Area, Colony (required*)"/>
+
+                    <input type="text" name="address1" class="phone-num" placeholder="House No., Building Name (required*)"/>
+
+                    <input type="text" name="address2" class="phone-num" placeholder="Road Name, Area, Colony (required*)"/>
+
                     <div class="name-div">
-                        <input type="text" name="fname" class="fname" placeholder="State"
+                        <input type="text" name="state" class="fname" placeholder="State"
                         />
-                        <input type="text" name="lname" class="lname" placeholder="City"
+                        <input type="text" name="city" class="lname" placeholder="City"
                         />
                     </div>
                     <div class="name-div">
-                        <input type="text" name="fname" class="fname" placeholder="District"
+                        <input type="text" name="district" class="fname" placeholder="District"
                         />
-                        <input type="text" name="lname" class="lname" placeholder="Pin Code"
+                        <input type="text" name="pinCode" class="lname" placeholder="Pin Code"
                         />
                     </div>
                     
